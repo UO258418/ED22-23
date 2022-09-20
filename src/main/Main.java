@@ -24,12 +24,19 @@ public class Main {
 		//TestBench.test("cubic.txt", 3, 0, 26, "main.Algorithms", "cubic");
 		//TestBench.test("logarithmic.txt", 3, 0, 10000, "main.Algorithms", "logarithmic");
 		
-		isSymmetric(new int[][] {
+		System.out.println(isSymmetric(new int[][] {
 			{1, 2, 3, 4},
 			{2, 6, 7, 8},
 			{3, 8, 11, 12},
 			{4, 12, 12, 16}
-		});
+		}));
+		
+		System.out.println(isSymmetric(new int[][] {
+			{1, 2, 3, 4},
+			{3, 6, 7, 8},
+			{3, 8, 11, 12},
+			{4, 12, 12, 16}
+		}));
 	}
 
 	public static int factorial(int n) {
@@ -89,7 +96,6 @@ public class Main {
 				for(int j = 0; j < matrix.length - 2; j++) {
 					topMatrix[i][j] = matrix[i][j];
 				}
-			System.out.println(topMatrix);
 			
 			// Copy botside of matrix
 			int[][] botMatrix = new int[matrix.length - 1][matrix.length - 1];
@@ -97,10 +103,9 @@ public class Main {
 				for(int j = 1; j < matrix.length - 1; j++) {
 					botMatrix[i][j] = matrix[i][j];
 				}
-			System.out.println(botMatrix);
+			
+			return isSymmetric(topMatrix) && isSymmetric(botMatrix);
 		}
-		
-		return true;
 	}
 	
 	
