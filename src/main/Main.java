@@ -3,21 +3,7 @@ package main;
 public class Main {
 	
 	public static void main(String... args) {
-		/*System.out.println(factorial(4));
-		System.out.println(recursiveFactorial(4));
-		System.out.println(isOdd(10));
-		System.out.println(intDivision(10, 3));
-		System.out.println(reminder(10, 3));
-		System.out.println("Fibonacci: " + fibonacci(6));
-		System.out.println("PowTwo: " + powTwo(1));
-		System.out.println("RecursivePowTwo: " + recursivePowTwo(3));
-		System.out.println("LogarithmicRecursivePowTwo: " + linearRecursivePowTwo(5));*/
-		
 		// Test times
-		/*Algorithms.linear(1000);
-		Algorithms.cuadratic(1000);
-		Algorithms.cubic(1000);
-		Algorithms.logarithmic(1000);*/
 		
 		//TestBench.test("linear.txt", 3, 0, 50, "main.Algorithms", "linear");
 		//TestBench.test("cuadratic.txt", 3, 0, 50, "main.Algorithms", "cuadratic");
@@ -25,20 +11,6 @@ public class Main {
 		//TestBench.test("logarithmic.txt", 3, 0, 10000, "main.Algorithms", "logarithmic");
 		
 		//TestBench.test("powTwo.txt", 3, 0, 100, "main.Main", "powTwo");
-		
-		System.out.println(isSymmetric(new int[][] {
-			{1, 2, 3, 4},
-			{2, 6, 7, 8},
-			{3, 7, 11, 12},
-			{4, 8, 12, 16}
-		}));
-		
-		System.out.println(isSymmetric(new int[][] {
-			{1, 2, 3, 4},
-			{3, 6, 7, 8},
-			{3, 8, 11, 12},
-			{4, 12, 12, 16}
-		}));
 	}
 
 	public static int factorial(int n) throws IllegalArgumentException {
