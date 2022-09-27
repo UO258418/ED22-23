@@ -21,7 +21,7 @@ public class Algorithms {
 	}
 	
 	public static void logarithmic(long n) {
-		for(int i = 0; i < n; n*= 2)
+		for(int i = 1; i < n; i *= 2)
 			TestBench.doNothing(i);
 	}
 	
